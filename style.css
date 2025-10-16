@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 4rem;
+}
+
+.hero {
+  background-color: blue;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgb(231, 198, 121),
+      rgb(102, 91, 75)
+    ),
+    url(images/beach.jpg);
+  background-size: 300%;
+  background-position: left;
+  background-repeat: no-repeat;
+  color: white;
+  animation: background-move 40s linear infinite alternate duration
+    timing-function delay iteration-count direction fill-mode;
+}
+
+.section1 {
+  background: linear-gradient(to right, rgb(255, 228, 196), rgb(109, 95, 77));
+}
+
+.section2 {
+  background-color: rgba(0, 136, 255, 0.056);
+  text-align: center;
+}
+
+section {
+  margin-top: 20px;
+  display: flex;
+  padding: 20px, 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 20vh;
+  text-align: center;
+}
+
+button {
+  padding: 20px, 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+@keyframes background-move {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
